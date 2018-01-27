@@ -18,6 +18,7 @@
      <router-link class="navbar-item" to='/'>Home</router-link>
      <router-link class="navbar-item" to='/Portofolio'>Portofolio</router-link>
      <router-link class="navbar-item" to='/About'>About</router-link>
+     <router-link class="navbar-item" to='/User'>User</router-link>
     </div>
 
     <div class="navbar-end">
@@ -27,7 +28,11 @@
 </nav>
   </div>
 </template>
-
+<style type="text/css">
+  nav{
+    margin-bottom: 50px;
+  }
+</style>
 <script type="text/javascript">
   export default{
     name:'Navbar'

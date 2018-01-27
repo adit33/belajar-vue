@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Home from  '@/components/pages/Home'
 import About from '@/components/pages/About' 
 import Portofolio from '@/components/pages/Portofolio'
+import User from '@/components/pages/user/Lists'
 Vue.use(Router)
 
 export default new Router({
@@ -22,6 +23,11 @@ export default new Router({
     	path:'/Portofolio',
     	name:'Portofolio',
     	component:Portofolio
+    },
+    {
+      path:'/User',
+      name:'User',
+      component:User
     }
   ]
 })
