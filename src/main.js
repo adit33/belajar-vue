@@ -4,7 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import Home from './components/pages/Home.vue'
 import router from './router'
-
+import axios from 'axios'
+import Bootstrap from 'bootstrap/dist/js/bootstrap.min'
 
 require('./assets/scss/app.scss')
 

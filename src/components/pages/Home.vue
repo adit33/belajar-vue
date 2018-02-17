@@ -1,11 +1,27 @@
 <template>
 	<div>
-		<h1>Home WKWKWW</h1>
+		<h1>{{ text }}</h1>
 	</div>
 </template>
 
 <script type="text/javascript">
+	import axios from 'axios'
 	export default{
-		name:'home'
+		name:'home',
+		data(){
+			return{
+				text:''
+			}
+		},
+		mounted(){
+			this.fetchText()
+		},
+		methods:{
+			fetchText(){
+				axios.get('http://localhost:8000/test').then(response=>{
+					this.text=response.data;
+				})
+			}
+		}
 	}
 </script>

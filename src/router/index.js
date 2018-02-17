@@ -8,6 +8,7 @@ import User from '@/components/pages/user/Lists'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
